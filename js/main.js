@@ -64,20 +64,31 @@ let consulta = prompt(
   "Desea revisar el detalle de las consultas realizadas? Ingrese si o no"
 ).toUpperCase();
 
-do{
-    alert('las consultas realizadas fueron las sigiuientes: ' + listaDeConsultas);
-    let opcion = parseInt(prompt('Ingrese la consulta de la cual desea ver el detalle'));
-    if (opcion <= listaDeConsultas.length && opcion >0){
-        alert('Detalle: ' + " " +
-        'Cantidad de producto: ' + productos[opcion-1] + ' ' +
-        'Cantidad de cuotas: ' + cuotas[opcion-1] + ' ' +
-        'Valor total: ' + listaDeConsultas[opcion-1]);
-    }else {
-        alert('la opcion ingresada es incorrecta, vuelva a intentar')
-        opcion = parseInt(prompt('Ingrese la consulta de la cual desea ver el detalle'));
-    }
-    consulta = prompt(
-        "Desea revisar el detalle de las consultas realizadas? Ingrese si o no"
-      ).toUpperCase();
-
-}while(consulta == 'SI');
+do {
+  alert("las consultas realizadas fueron las sigiuientes: " + listaDeConsultas);
+  let opcion = parseInt(
+    prompt("Ingrese la consulta de la cual desea ver el detalle")
+  );
+  if (opcion <= listaDeConsultas.length && opcion > 0) {
+    alert(
+      "Detalle: " +
+        " " +
+        "Cantidad de producto: " +
+        productos[opcion - 1] +
+        " " +
+        "Cantidad de cuotas: " +
+        cuotas[opcion - 1] +
+        " " +
+        "Valor total: " +
+        listaDeConsultas[opcion - 1]
+    );
+  } else {
+    alert("la opcion ingresada es incorrecta, vuelva a intentar");
+    opcion = parseInt(
+      prompt("Ingrese la consulta de la cual desea ver el detalle")
+    );
+  }
+  consulta = prompt(
+    "Desea revisar el detalle de las consultas realizadas? Ingrese si o no"
+  ).toUpperCase();
+} while (consulta == "SI");
