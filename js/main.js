@@ -92,3 +92,5 @@ do {
     "Desea revisar el detalle de las consultas realizadas? Ingrese si o no"
   ).toUpperCase();
 } while (consulta == "SI");
+
+alert('MUCHAS GRACIAS POR SU CONSULTA');
